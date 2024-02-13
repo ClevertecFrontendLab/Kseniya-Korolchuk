@@ -1,26 +1,22 @@
-import { Button, Breadcrumb, Typography } from 'antd';
+import { Button, Breadcrumb } from 'antd';
 import { SettingOutlined } from '@ant-design/icons';
-import './Header.css';
 import { Header } from 'antd/lib/layout/layout';
+import styles from './Header.module.css';
 
-const { Title } = Typography;
+export const HeaderComponent = () => {
 
-interface IHeaderProps {
-    theme: string;
-}
-
-export const HeaderComponent = (props: IHeaderProps) =>  {
-
-    const { theme } = props;
-    return (<Header className={theme === 'LIGHT' ? "ant-layout-sider-light" : "ant-layout-sider-dark"} style={{ padding: "16px 24px", height: "168px"}}>
-        <Breadcrumb>
+    return (<Header className={styles['header']}>
+        <Breadcrumb className={styles['breadcrumb']}>
             <Breadcrumb.Item>Главная</Breadcrumb.Item>
         </Breadcrumb>
-        <div className='header_content'>
-            <Title>Приветствуем тебя в CleverFit — приложении, <br/> которое поможет тебе добиться своей мечты!</Title>
+        <div className={styles['header_content']}>
+            <h1 className={styles['h1']}>
+                <span className={styles['h1_line']}>Приветствуем тебя&nbsp;в<span className={styles['h1_clever']}> CleverFit — </span>приложении,</span>
+                <span className={styles['h1_line2']}>которое поможет тебе добиться своей мечты!</span></h1>
             <Button type="text"
-            icon={<SettingOutlined />}
-            className='header_button'
+                icon={<SettingOutlined />}
+                className={styles['header_button']}
+                size='large'
             >Настройки</Button>
         </div>
     </Header>);

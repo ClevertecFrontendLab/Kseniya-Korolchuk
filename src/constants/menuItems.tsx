@@ -3,27 +3,22 @@ import { CalendarTwoTone, HeartFilled, TrophyFilled, IdcardOutlined } from "@ant
 export const MENU_ITEMS = [
     {
         key: '1',
-        icon: <CalendarTwoTone twoToneColor={"blue"} />,
+        icon: <CalendarTwoTone twoToneColor={["#061178", "#061178"]} />,
         label: 'Календарь',
     },
     {
         key: '2',
-        icon: <HeartFilled />,
+        icon: <HeartFilled style={{color: "#061178"}}/>,
         label: 'Тренировки',
     },
     {
         key: '3',
-        icon: <TrophyFilled />,
+        icon: <TrophyFilled style={{color: "#061178"}}/>,
         label: 'Достижения',
     },
     {
         key: '4',
-        icon: <IdcardOutlined />,
+        icon: <IdcardOutlined style={{color: "#061178"}}/>,
         label: 'Профиль',
     },
-    {
-        key: '5',
-        icon: <IdcardOutlined />,
-        label: 'Выход',
-    }
 ];

@@ -1,0 +1,3 @@
+[class*='ant-layout-content'].main_content {
+    height: calc(100% - 168px);
+}

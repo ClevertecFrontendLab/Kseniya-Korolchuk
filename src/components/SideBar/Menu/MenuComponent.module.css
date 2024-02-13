@@ -1,0 +1,18 @@
+[class*='ant-menu'][class*='ant-menu-inline'].sider_menu {
+    margin-top: 47px;
+}
+
+[class*='ant-menu'][class*='ant-menu-inline'].sider_menu [class*='ant-menu-item'] {
+    margin-bottom: 18px;
+    letter-spacing: 0.6px;
+}
+
+[class*='ant-menu'][class*='ant-menu-inline'].sider_menu [class*='ant-menu-item']:hover {
+    color: var(--primary-light-9);
+}
+
+[class*='ant-menu'][class*='ant-menu-inline'].sider_menu
+    [class*='ant-menu-item']
+    > [class*='anticon'] {
+    margin-bottom: 0;
+}

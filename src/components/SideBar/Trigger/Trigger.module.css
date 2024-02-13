@@ -1,0 +1,17 @@
+.trigger {
+    position: absolute;
+    left: calc(100% + 1px);
+    top: 47%;
+    border-left: 20px solid white;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	height: 66px;
+	width: 0;
+}
+
+.trigger > div {
+    position: absolute;
+    left: -18px;
+    width: 14px;
+    z-index: 10;
+}

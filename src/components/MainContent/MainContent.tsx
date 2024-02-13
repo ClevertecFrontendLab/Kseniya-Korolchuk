@@ -3,12 +3,13 @@ import { CardBenefits } from "./components/CardBenefits";
 import { CardsAction } from "./components/CardsAction/CardsAction";
 import { CardDescription } from "./components/CardDescription";
 import { CardDownload } from "./components/CardDownload/CardDownload";
+import styles from "./MainContent.module.css";
 const { Content } = Layout;
 
 
 export const MainContent = () => (
     <Content
-        className="site-layout-background"
+        className={styles['main_content']}
         style={{
             padding: 24,
             maxWidth: 752,
