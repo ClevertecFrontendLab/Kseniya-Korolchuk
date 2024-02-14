@@ -10,6 +10,10 @@
     margin: 19px calc(50% - 14px);
 }
 
+[class*='ant-layout-sider'][class*='ant-layout-sider-light'] > * > img {
+    object-fit: contain !important;
+}
+
 [class*='ant-layout-footer'].sider_footer {
     position: absolute;
     bottom: 0;
@@ -29,3 +33,19 @@
     height: 1px;
     margin: 0;
 }
+
+@media (max-width: 480px ) {
+    [class*='ant-layout-sider'] > * > img {
+        width: 100px;
+    }
+
+    [class*='ant-layout-sider-collapsed'] > * > img {
+        display: none;
+    }
+
+    [class*='ant-layout-sider'][class*='ant-layout-sider-light'].sider  {
+        position: fixed;
+        z-index: 10;
+    }
+}
+

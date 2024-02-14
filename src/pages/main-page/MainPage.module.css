@@ -5,4 +5,5 @@
     background-image: url("./assets/images/main_page_light.png");
     background-position: center;
     background-size: cover;
+    overflow-y: hidden;
 }

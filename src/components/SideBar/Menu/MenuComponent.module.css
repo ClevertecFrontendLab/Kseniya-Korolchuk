@@ -16,3 +16,16 @@
     > [class*='anticon'] {
     margin-bottom: 0;
 }
+
+
+@media (max-width: 479px ) {
+    [class*='ant-menu'][class*='ant-menu-inline'].sider_menu
+    [class*='ant-menu-item']
+    > [class*='anticon'] {
+        display: none;
+    }
+
+    .sider_menu [class*='ant-menu-item'] {
+        padding: 0 !important;
+    }
+}

@@ -12,15 +12,19 @@ const { Sider, Footer } = Layout;
 
 export const SiderComponent = () => {
     const [collapsed, setCollapsed] = useState(false);
+    const [isBreakpoint, setBreakpoint] = useState(false);
+    const handleBreakpoint = (breakPoint: boolean) => setBreakpoint(breakPoint);
 
     return (
         <Sider
             theme='light'
             trigger={null}
             collapsible
+            breakpoint='xs'
+            onBreakpoint={handleBreakpoint}
             collapsed={collapsed}
-            width={SIDER_WIDTH.DESKTOP}
-            collapsedWidth={SIDER_WIDTH.DESKTOP_COLLAPSED}
+            width={!isBreakpoint ? SIDER_WIDTH.DESKTOP : SIDER_WIDTH.MOBILE}
+            collapsedWidth={!isBreakpoint ? SIDER_WIDTH.DESKTOP_COLLAPSED : SIDER_WIDTH.MOBILE__COLLAPSED}
             className={styles['sider']}
         >
             <Logo

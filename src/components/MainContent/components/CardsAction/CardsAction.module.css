@@ -13,3 +13,10 @@
 [class*='ant-btn-text'].card_button {
     color: #2f54eb;
 }
+
+@media (max-width: 768px ) {
+    .card_action [class*='ant-card-head-title'] {
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+}

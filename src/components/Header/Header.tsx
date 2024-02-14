@@ -1,4 +1,4 @@
-import { Button, Breadcrumb } from 'antd';
+import { Button, Breadcrumb, Typography } from 'antd';
 import { SettingOutlined } from '@ant-design/icons';
 import { Header } from 'antd/lib/layout/layout';
 import styles from './Header.module.css';
@@ -10,9 +10,9 @@ export const HeaderComponent = () => {
             <Breadcrumb.Item>Главная</Breadcrumb.Item>
         </Breadcrumb>
         <div className={styles['header_content']}>
-            <h1 className={styles['h1']}>
+            <Typography.Title className={styles['h1']}>
                 <span className={styles['h1_line']}>Приветствуем тебя&nbsp;в<span className={styles['h1_clever']}> CleverFit — </span>приложении,</span>
-                <span className={styles['h1_line2']}>которое поможет тебе добиться своей мечты!</span></h1>
+                <span className={styles['h1_line2']}>которое поможет тебе добиться своей мечты!</span></Typography.Title>
             <Button type="text"
                 icon={<SettingOutlined />}
                 className={styles['header_button']}
