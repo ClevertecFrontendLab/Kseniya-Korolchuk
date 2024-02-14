@@ -1,12 +1,14 @@
 import { CARD_ACTION_ITEMS } from "@constants/CardActionItems"
 import { CardActionItem } from "./CardActionItem"
-import { Row } from "antd"
+import { Col, Row } from "antd"
 
 export const CardsAction = () => (
 
-    <Row>
+    <Row gutter={[16, 5]} style={{marginTop: 16}}>
         {CARD_ACTION_ITEMS.map((item) => (
-            <CardActionItem item={item} key={item.key}/>
+            <Col xs={{ span: 24 }} sm={{ span: 8 }} key={item.key}>
+                <CardActionItem item={item}  />
+            </Col>
         ))}
     </Row>
 

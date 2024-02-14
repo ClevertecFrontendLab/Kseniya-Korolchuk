@@ -1,0 +1,16 @@
+[class*="ant-card"].card_benefits {
+    font-size: var(--h6-fz);
+    color: var(--primary-light-9);
+    letter-spacing: 0.5px;
+    line-height: var(--h6-lh);
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+[class*="ant-card-body"] > p {
+    margin-bottom: 3px;
+}
+
+[class*="ant-card-body"] :nth-child(4){
+    margin-bottom: 9px;
+}
