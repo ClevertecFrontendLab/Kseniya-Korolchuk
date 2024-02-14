@@ -34,6 +34,7 @@ export const SiderComponent = () => {
             <Trigger
                 collapsed={collapsed}
                 setCollapsed={setCollapsed}
+                isBreakpoint={isBreakpoint}
             />
             <Footer
                 className={styles['sider_footer']}

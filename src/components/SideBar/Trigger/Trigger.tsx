@@ -14,7 +14,7 @@ export const Trigger = (props: ITrigger) => {
     const switchTrigger = () => setCollapsed(!collapsed);
 
     return (
-        <Space className={styles['trigger']} data-test-id={isBreakpoint ? "sider_switch_mobile" : "sider_switch"}>
+        <Space className={styles['trigger']} data-test-id={isBreakpoint ? "sider-switch-mobile" : "sider-switch"}>
             {collapsed ? <MenuUnfoldOutlined onClick={switchTrigger} /> : <MenuFoldOutlined onClick={switchTrigger} />}
         </Space>
     );
