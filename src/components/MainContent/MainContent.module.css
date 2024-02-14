@@ -1,0 +1,41 @@
+[class*='ant-layout-content'].main_content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 168px);
+}
+
+.main_container {
+    width: 100%;
+    max-width: 752px;
+}
+
+.main_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+[class*="ant-btn"].footer_button {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+
+@media (max-width: 768px ) {
+
+    .main_footer {
+        margin-top: 50px;
+       flex-direction: column-reverse !important;
+       align-items: center;
+    }
+
+    .main_footer > [class*="ant-card"] {
+        order: 2;
+    }
+
+    [class*="ant-btn"].footer_button {
+        order: 1;
+    }
+}

@@ -1,0 +1,7 @@
+[class*='ant-btn'][class*='ant-btn-text'][class*='ant-btn-lg'].menu_button {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    gap: 16px;
+    text-align: 'start';
+}
