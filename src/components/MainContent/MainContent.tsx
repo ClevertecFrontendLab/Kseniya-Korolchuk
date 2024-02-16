@@ -1,7 +1,7 @@
 import { Button, Layout } from "antd";
 import { CardBenefits } from "./components/CardBenefits/CardBenefits";
 import { CardsAction } from "./components/CardsAction/CardsAction";
-import { CardDescription } from "./components/CardBenefits/CardDescription/CardDescription";
+import { CardDescription } from "./components/CardDescription/CardDescription";
 import { CardDownload } from "./components/CardDownload/CardDownload";
 import styles from "./MainContent.module.css";
 const { Content } = Layout;

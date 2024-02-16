@@ -5,3 +5,14 @@
     gap: 16px;
     text-align: 'start';
 }
+
+@media (max-width: 480px) {
+    [class*='ant-btn'][class*='ant-btn-text'][class*='ant-btn-lg'].menu_button
+        > [class*='anticon'] {
+        display: none;
+    }
+
+    [class*='ant-btn'][class*='ant-btn-text'][class*='ant-btn-lg'].menu_button {
+        justify-content: center;
+    }
+}

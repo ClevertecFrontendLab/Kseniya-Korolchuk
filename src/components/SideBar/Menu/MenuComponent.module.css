@@ -17,12 +17,19 @@
     margin-bottom: 0;
 }
 
-
-@media (max-width: 479px ) {
+@media (max-width: 479px) {
     [class*='ant-menu'][class*='ant-menu-inline'].sider_menu
-    [class*='ant-menu-item']
-    > [class*='anticon'] {
+        [class*='ant-menu-item']
+        > [class*='anticon'] {
         display: none;
+    }
+
+    [class*='ant-menu'][class*='ant-menu-inline'].sider_menu {
+        margin-top: 22px;
+    }
+
+    [class*='ant-menu'][class*='ant-menu-inline'].sider_menu [class*='ant-menu-item'] {
+        margin-bottom: 10px;
     }
 
     .sider_menu [class*='ant-menu-item'] {

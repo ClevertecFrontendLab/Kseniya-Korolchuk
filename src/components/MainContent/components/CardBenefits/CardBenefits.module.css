@@ -1,4 +1,4 @@
-[class*="ant-card"].card_benefits {
+[class*='ant-card'].card_benefits {
     font-size: var(--h6-fz);
     color: var(--primary-light-9);
     letter-spacing: 0.5px;
@@ -7,10 +7,24 @@
     border-radius: 2px;
 }
 
-[class*="ant-card-body"] > p {
+[class*='ant-card-body'] > p {
     margin-bottom: 3px;
 }
 
-[class*="ant-card-body"] :nth-child(4){
+[class*='ant-card-body'] :nth-child(4) {
     margin-bottom: 9px;
+}
+
+@media (max-width: 479px) {
+    [class*='ant-card'].card_benefits > [class*='ant-card-body'] {
+        padding: 16px;
+    }
+
+    [class*='ant-card-body'] > p {
+        line-height: 123%;
+    }
+
+    [class*='ant-card-body'] :nth-child(3) {
+        margin-bottom: 3px;
+    }
 }

@@ -1,12 +1,12 @@
 .trigger {
     position: absolute;
-    left: calc(100% + 1px);
+    left: calc(100% - 1px);
     top: 47%;
-    border-left: 20px solid white;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	height: 66px;
-	width: 0;
+    width: 0;
+    border-left: 22px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    height: 66px;
 }
 
 .trigger > div {
@@ -16,10 +16,17 @@
     z-index: 10;
 }
 
-@media (max-width: 479px ) {
+@media (max-width: 479px) {
     .trigger {
-        top: 5%;
+        top: 3%;
+        height: 48px;
+        border-left: 33px solid white;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
 
+    .trigger > div {
+        position: absolute;
+        left: -22px;
     }
 }
-

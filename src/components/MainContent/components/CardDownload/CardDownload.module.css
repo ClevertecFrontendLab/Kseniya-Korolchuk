@@ -1,4 +1,4 @@
- [class*="ant-card"].card_download {
+[class*='ant-card'].card_download {
     display: flex;
     flex-direction: column;
     width: 240px;
@@ -31,4 +31,23 @@
 
 .card_btns-wrapper [class*='ant-btn'] > span {
     letter-spacing: 0.7px;
+}
+
+@media (max-width: 479px) {
+    [class*='ant-card'].card_download {
+        width: 100%;
+    }
+
+    .card_download [class*='ant-card-head-wrapper'] {
+        align-items: center;
+    }
+
+    [class*='ant-card'].card_download > [class*='card-body'] > [class*='ant-space'] {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_btns-wrapper [class*='ant-btn'] {
+        padding-left: 16px;
+    }
 }
