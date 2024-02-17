@@ -1,5 +1,5 @@
 [class*='ant-layout-sider'][class*='ant-layout-sider-light'].sider {
-    min-height: calc(100vh) !important;
+    min-height: 100vh !important;
     padding-top: 30px;
     position: relative;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);

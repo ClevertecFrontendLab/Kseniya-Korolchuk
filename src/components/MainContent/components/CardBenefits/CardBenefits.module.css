@@ -8,23 +8,20 @@
 }
 
 [class*='ant-card-body'] > p {
-    margin-bottom: 3px;
+    margin: 0;
+    line-height: 130%;
+    letter-spacing: 0.6px;
 }
 
-[class*='ant-card-body'] :nth-child(4) {
-    margin-bottom: 9px;
+@media (max-width: 834px) {
+    [class*='ant-card-body'] > p {
+        margin: 0;
+        line-height: 130%;
+    }
 }
 
 @media (max-width: 479px) {
     [class*='ant-card'].card_benefits > [class*='ant-card-body'] {
         padding: 16px;
-    }
-
-    [class*='ant-card-body'] > p {
-        line-height: 123%;
-    }
-
-    [class*='ant-card-body'] :nth-child(3) {
-        margin-bottom: 3px;
     }
 }

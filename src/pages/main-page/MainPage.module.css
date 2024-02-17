@@ -1,9 +1,22 @@
 [class*='ant-layout'].container {
     max-width: 1440px;
-    min-height: 1024px;
+    min-height: 100vh;
+    height: 1024px;
     margin: 0 auto;
-    background-image: url("./assets/images/main_page_light.png");
+    background-image: url('./assets/images/main_page_light.png');
     background-position: center;
     background-size: cover;
     overflow-y: hidden;
+}
+
+@media (max-width: 834px) {
+    [class*='ant-layout'].container {
+        min-height: 1194px;
+    }
+}
+
+@media (max-width: 360px) {
+    [class*='ant-layout'].container {
+        min-height: 1362px;
+    }
 }
