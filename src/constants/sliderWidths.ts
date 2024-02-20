@@ -3,4 +3,4 @@ export const SIDER_WIDTH = {
     MOBILE: 106,
     DESKTOP_COLLAPSED: 64,
     MOBILE__COLLAPSED: 0,
-}
+};

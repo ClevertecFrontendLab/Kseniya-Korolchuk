@@ -1,14 +1,13 @@
-import { useState } from "react";
-import { Logo } from "./Logo/Logo";
-import { MenuComponent } from "./Menu/MenuComponent";
-import { Divider, Layout } from "antd";
-import { MenuButton } from "./MenuButton/MenuButton";
-import styles from "./SiderComponent.module.css";
-import { SIDER_WIDTH } from "@constants/sliderWidths";
-import { Trigger } from "./Trigger/Trigger";
+import { useState } from 'react';
+import { Logo } from './Logo/Logo';
+import { MenuComponent } from './Menu/MenuComponent';
+import { Divider, Layout } from 'antd';
+import { MenuButton } from './MenuButton/MenuButton';
+import styles from './SiderComponent.module.css';
+import { SIDER_WIDTH } from '@constants/sliderWidths';
+import { Trigger } from './Trigger/Trigger';
 
 const { Sider, Footer } = Layout;
-
 
 export const SiderComponent = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -24,26 +23,22 @@ export const SiderComponent = () => {
             onBreakpoint={handleBreakpoint}
             collapsed={collapsed}
             width={!isBreakpoint ? SIDER_WIDTH.DESKTOP : SIDER_WIDTH.MOBILE}
-            collapsedWidth={!isBreakpoint ? SIDER_WIDTH.DESKTOP_COLLAPSED : SIDER_WIDTH.MOBILE__COLLAPSED}
+            collapsedWidth={
+                !isBreakpoint ? SIDER_WIDTH.DESKTOP_COLLAPSED : SIDER_WIDTH.MOBILE__COLLAPSED
+            }
             className={styles['sider']}
         >
-            <Logo
-                collapsed={collapsed}
-            />
+            <Logo collapsed={collapsed} />
             <MenuComponent />
             <Trigger
                 collapsed={collapsed}
                 setCollapsed={setCollapsed}
                 isBreakpoint={isBreakpoint}
             />
-            <Footer
-                className={styles['sider_footer']}
-            >
+            <Footer className={styles['sider_footer']}>
                 <Divider className={styles['sider_divider']} />
-                <MenuButton>
-                    {collapsed ? '' : 'Выход'}
-                </MenuButton>
+                <MenuButton>{collapsed ? '' : 'Выход'}</MenuButton>
             </Footer>
         </Sider>
     );
-}
+};

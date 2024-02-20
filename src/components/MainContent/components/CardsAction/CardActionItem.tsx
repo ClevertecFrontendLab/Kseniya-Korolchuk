@@ -9,14 +9,7 @@ export const CardActionItem = ({
 }) => {
     const { title, icon, body } = item;
     return (
-        <Card
-            title={title}
-            bordered={false}
-            className={styles['card_action']}
-            headStyle={{
-
-            }}
-        >
+        <Card title={title} bordered={false} className={styles['card_action']} headStyle={{}}>
             <Button type='text' icon={icon} className={styles['card_button']}>
                 {body}
             </Button>
